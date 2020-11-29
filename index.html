@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>REGISTRATION FORM</title>
+    <link href='https://fonts.googleapis.com/css?family=Aldrich' rel='stylesheet'>
+</header>
+<body>
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+<h2>REGISTRATION FORM</h2>
+
+<p>Date:- <span id="datetime"></span></p>
+
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+</script>
+<!--form filling-->
+</br>
+
+<!--form filling condition-->
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" required>
+<div class="dfname">
+
+    <h3 id="initial">* Fill all required blanks</h3> </br>
+
+    
+<!--First Name-->
+<label for="First Name" class="fname" id="fname" > First Name:-</label>
+<input id = "name1" type="text" name="fill" placeholder="First Name" required type="text">
+<!--Second Name-->
+<label for="Second Name" class="fname1" id="lname"  > Second Name:-</label>
+<input id = "name1" type="text" name="fill" placeholder="Second Name" required type="text">
+<!--Email Id-->
+<label for="Email Id" class="fname1" id="email" > Email Id:-</label>
+<input id = "name1" type="text" name="fill" placeholder="abcd@gmail.com" required type="text">
+<!--DOB-->
+<label for="DOB" class="fname1"  > D O B:-</label>
+<input id = "name1" type="date" name="fill" placeholder="MM/DD/YYYY" required type="date">
+<!--Education-->
+<label for="education" class="fname1"  > Education:-</label>
+<input id = "name1" type="text" name="fill" placeholder="Degree" required type="text">
+<!--college name-->
+<label for="College Name" class="fname1"  > College Name:-</label>
+<input id = "name1" type="text" name="fill" placeholder="College Name" required type="text">
+<!--CGPA-->
+<label for="CGPA" class="fname1"  >CGPA (%):-</label>
+<input id = "name1" type="number" name="fill" placeholder="Ex:- 8" requiredtype="number">
+
+<!--experience-->
+<label for="Experience" class="fname1"  >Experience:-</label>
+<input list="ex"  id = "name1"  name="fill" placeholder="Ex:- 8" requiredtype="type">
+
+<datalist id="ex">
+    <option>0-2</option>
+    <option>2-5</option>
+    <option>5-10</option>
+</datalist>
+
+<!--currenr salary-->
+<label for="Current salary" class="fname1"  > Current CTC:-</label>
+<input id = "name1" type="text" name="fill" placeholder="-/year" required type="number">
+<!--Expected salary-->
+<label for="Expected salary" class="fname1"  > Expected CTC:-</label>
+<input id = "name1" type="text" name="fill" placeholder="-/year" required type="number">
+
+<label for="Address" class="fname1"  >Address:-</label><br/>
+
+<!--county label-->
+<label for="Country" class="fname1"  > Country:-</label>
+<input list="Country" id = "name1"  name="fill" required type="text">
+
+<datalist id="Country">
+    <option value="india">
+    <option value="US">
+    <option value="Japan">
+    <option value="China">
+    <option value="Africa">
+</datalist>
+<!--State label-->
+<label for="State" class="fname1"  > State:-</label>
+<input list="State" id = "name1"  name="fill" required type="text">
+
+<datalist id="State">
+    <option value="Tamilnadu">
+    <option value="Karnataka">
+    <option value="Kerala">
+    <option value="Andhra">
+    <option value="Delhi">
+</datalist>
+<!--city-->
+<label for="city" class="fname1"  > City:-</label>
+<input id = "name1" type="text" name="city" placeholder="" required type="textfname-->
+<labefname" class="fnamfname:-</label>
+<input id = "name1" type="text" name="fill" placeholder="" required type="text">
+
+
+<!--agree and submit-->
+<div class="text-left checkbox-wrapper">
+   <body onload="disableSubmit()">
+    
+   <input type="checkbox"  id="terms" class="checkbox" onchange="activateButton(this)" > <h7 class="checkbox-label"> I Agree Terms & Coditions</h7>
+  
+   <br></br>
+   <input type="submit" name="submit" class="name1" id="submit">
+</body>
+</form>
+</div>
+<br/>
+</div>
+
+   
+    
+
+
+   
+
+
+
+    
+
+
+
+  
+
+
+</body>
+</html>
